@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="edffa6eb63530fa40075e5c7c221f935f3908b84" author="(TEST)-Generated" failOnError="false"    >
+	<changeSet id="6383aae5a9293e5e8be75a5deacb964c7b847370" author="(TEST)-Generated" failOnError="false"    >
 		<n0:createSxmlObject objectName="EMP" objectType="TABLE" ownerName="TEST"   >
 			<n0:source><![CDATA[
   <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
@@ -35,6 +35,12 @@
          </COL_LIST_ITEM>
          <COL_LIST_ITEM>
             <NAME>MANAGER</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>200</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>COMMENTAIRE</NAME>
             <DATATYPE>VARCHAR2</DATATYPE>
             <LENGTH>200</LENGTH>
             <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
