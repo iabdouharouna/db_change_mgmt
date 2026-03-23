@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="c7eaa9f5bfbbb2b32cfa4bca869fe53d6559e5cd" author="(TEST)-Generated" failOnError="false"    >
+		<n0:createOracleProcedure objectName="EMP_UPGRADE" objectType="PROCEDURE" ownerName="TEST"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PROCEDURE "TEST"."EMP_UPGRADE" as
+begin
+ update emp set sal = sal + 100;
+end emp_upgrade;
+]]></n0:source>
+		</n0:createOracleProcedure>
+	</changeSet>
+</databaseChangeLog>
